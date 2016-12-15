@@ -9,6 +9,19 @@
   </head>
 
   <body>
+  <center>
+  <font size = '14' face='signet' color = 'black'> Welcome To Paradise Fashion </font>
+  <p>
+	<ul>
+
+	<li><%= link_to('home', controller: 'pages', action: 'home',) %></li>
+	<li><%= link_to('about_us', controller: 'pages', action: 'about_us',) %></li>
+	<li><%= link_to('contact_us', controller: 'pages', action: 'contact_us',) %></li> 
+	<li><%= link_to('opening_hours', controller: 'pages', action: 'opening_hours',) %></li>
+
+	</ul>
+</p>	
     <%= yield %>
+    </center>
   </body>
 </html>
